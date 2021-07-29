@@ -1,0 +1,80 @@
+
+:root{
+    --speed:0.2s;
+    
+}
+
+
+.heading
+{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:400px;
+}
+.machine{
+    height: 300px;
+    width: 800px;
+    background-color: cyan;
+    border: solid black 4px;
+    display: flex;
+    z-index: 5;
+    margin-left: 150px;
+}
+.slot{
+
+    height:250px;
+    width: 250px;
+    margin: 20px;
+    background-color: blue;
+    border: solid black 3px;
+    z-index: 1;
+    text-align: center;
+    font-size: 100pt;
+    line-height: 250px;
+    transform: translateZ(40px);
+
+    overflow: hidden;
+
+}
+#inpSpeed
+{
+    font-size: 30pt;
+    margin-left: 30px;
+    width:30pt;
+
+}
+#btn
+{
+    font-size: large;
+    margin-top: 30px;
+    margin-left: 400pt;
+}
+#status
+{
+    margin-left: 400pt;
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 60px;
+    height: 30px;
+    
+}
+.e
+{
+    z-index: 3;
+    animation: slotmachine;
+    animation-iteration-count: infinite;
+    animation-duration: var(--speed);
+    
+    overflow: hidden;
+}
+@keyframes slotmachine
+{
+    0%
+    {
+        transform: translateY(-200px);
+    }
+    100%
+    {
+        transform: translateY(200px);
+    }
+}
